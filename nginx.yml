@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: siva-nginx-app
+  labels:
+    env: sandbox
+spec:
+  containers:
+    - name: siva-nginx
+      image: nginx

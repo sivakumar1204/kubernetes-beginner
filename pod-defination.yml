@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: siva-myapp-pod
+  labels:
+    app: myapp
+    tier: front-end
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+
+
+#To create the pod command below
+# kubectl create -f pod-defination.yml
+# kubectl apply -f pod-defination.yml
+
+# To get list of all pods information command below
+# kubectl get pods
+
+#To know more information about the perticular pod command below
+#kubectl describe pod siva-myapp-pod
+
